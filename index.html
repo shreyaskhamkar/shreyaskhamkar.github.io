@@ -1,22 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyas Khamkar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name]. I'm a full-stack developer.</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>I work with React, C# .NET, and PostgreSQL.</p>
-    </section>
-    <footer>
-        <p>© 2025 Your Name</p>
-    </footer>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Shreyas</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <!-- Profile Image -->      
+      <img src="profile.jpg" alt="Profile Image" class="profile-img" />
+      <h1>Hello! I'm Shreyas</h1>
+      <p>
+        Welcome to my website! I’m currently working as a software developer.
+        I have a passion for building scalable and efficient software solutions.
+        In my role as a software developer, I specialize in full-stack development,
+        working with technologies like React, Node.js, C#, PostgreSQL, Windows, and
+        web-based technologies. I enjoy solving complex problems and continuously
+        learning new skills to improve my craft.
+      </p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer with a strong focus on creating innovative and efficient solutions.
+        Whether working on the front-end or back-end, I aim to build applications that are both functional and beautiful.
+      </p>
+      <p>
+        In my free time, I enjoy exploring new technologies and learning about the latest trends in software development.
+        I'm always open to new opportunities and collaborations, so don't hesitate to reach out if you have any questions or would like to work together.
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>Project Title 1</h3>
+            <p>Short description of project 1.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2" />
+          <div class="project-info">
+            <h3>Project Title 2</h3>
+            <p>Short description of project 2.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3" />
+          <div class="project-info">
+            <h3>Project Title 3</h3>
+            <p>Short description of project 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shreyas Khamkar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
