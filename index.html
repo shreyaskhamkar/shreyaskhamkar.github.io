@@ -4,16 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreyas Khamkar</title>
+  <meta name="description" content="Portfolio of Shreyas Khamkar, a passionate full-stack developer specializing in scalable and efficient software solutions.">
+  <!-- Open Graph for better sharing -->
+  <meta property="og:title" content="Shreyas Khamkar Portfolio">
+  <meta property="og:description" content="Full-stack developer specializing in scalable and efficient software solutions.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css" />
-   <link rel="icon" class="logo-img" type="image/png" href="logo.jpg">
-
+  <link rel="icon" class="logo-img" type="image/png" href="logo.jpg">
 </head>
 <body>
   <!-- Header / Navigation -->
   <header class="header">
     <div class="container header-container">
       <div class="logo">Shreyas Khamkar </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main Navigation">
         <ul class="nav-list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -21,7 +26,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle" id="mobile-menu">
+      <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0" role="button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -34,7 +39,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <!-- Profile Image -->      
-      <img src="profile.jpg" alt="Profile Image" class="profile-img" />
+      <img src="profile.jpg" alt="Profile image of Shreyas Khamkar" class="profile-img" loading="lazy" />
       <h1>Hello! I'm Shreyas</h1>
       <p>
         Welcome to my website! I’m currently working as a software developer.
@@ -44,19 +49,18 @@
         web-based technologies. I enjoy solving complex problems and continuously
         learning new skills to improve my craft.
       </p>
-      
   
       <!-- Social Links -->
       <div class="social-links">
-        <a href="https://github.com/shreyaskhamkar" target="_blank">
-          <img src="github.png" alt="GitHub" class="social-icon" />
+        <a href="https://github.com/shreyaskhamkar" target="_blank" aria-label="GitHub profile">
+          <img src="github.png" alt="GitHub logo" class="social-icon" loading="lazy" />
         </a>
-        <a href="https://www.linkedin.com/in/shreyas-khamkar-0777b720a/" target="_blank">
-          <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+        <a href="https://www.linkedin.com/in/shreyas-khamkar-0777b720a/" target="_blank" aria-label="LinkedIn profile">
+          <img src="linkedin.png" alt="LinkedIn logo" class="social-icon" loading="lazy" />
         </a>
       </div>
 
-      <a href="shreyaskhamkar.pdf" download class="btn">Download Resume</a>
+      <a href="shreyaskhamkar.pdf" download class="btn" aria-label="Download Resume PDF">Download Resume</a>
     </div>
   </section>
   
@@ -72,6 +76,7 @@
       <p>
         In my free time, I enjoy exploring new technologies and learning about the latest trends in software development.
         I'm always open to new opportunities and collaborations, so don't hesitate to reach out if you have any questions or would like to work together.
+      </p>
     </div>
   </section>
 
@@ -81,24 +86,24 @@
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1" />
+          <img src="images/project1.jpg" alt="Screenshot of Game Hub project" loading="lazy" />
           <div class="project-info">
             <h3>Game Hub</h3>
-            <p>Short description of project 1.</p>
+            <p>Web-based platform for discovering and discussing video games, built with React, Node.js, and PostgreSQL.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2" />
+          <img src="images/project2.jpg" alt="Screenshot of Project Title 2" loading="lazy" />
           <div class="project-info">
             <h3>Project Title 2</h3>
-            <p>Short description of project 2.</p>
+            <p>Feature-rich productivity tool for managing daily tasks, reminders, and schedules.</p>
           </div>
         </div>
         <div class="project-card">
-          <img src="images/project3.jpg" alt="Project 3" />
+          <img src="images/project3.jpg" alt="Screenshot of Project Title 3" loading="lazy" />
           <div class="project-info">
             <h3>Project Title 3</h3>
-            <p>Short description of project 3.</p>
+            <p>Analytics dashboard providing real-time insights and visualizations for business metrics.</p>
           </div>
         </div>
       </div>
@@ -109,11 +114,15 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <form id="contact-form" aria-label="Contact form">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required aria-required="true" />
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required aria-required="true" />
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
         <button type="submit" class="btn">Send Message</button>
+        <div id="form-status" role="status" aria-live="polite" style="margin-top:10px;"></div>
       </form>
     </div>
   </section>
