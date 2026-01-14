@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreyas Khamkar</title>
-  <meta name="description" content="Portfolio of Shreyas Khamkar, a passionate full-stack developer specializing in scalable and efficient software solutions.">
-  <!-- Open Graph for better sharing -->
-  <meta property="og:title" content="Shreyas Khamkar Portfolio">
-  <meta property="og:description" content="Full-stack developer specializing in scalable and efficient software solutions.">
-  <meta property="og:image" content="profile.jpg">
-  <meta property="og:type" content="website">
+  <title>Shreyas Khamkar | Full-Stack Developer</title>
+  <meta name="description"
+    content="Full-Stack Developer passionate about building scalable web and mobile experiences with React, .NET & Flutter.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" class="logo-img" type="image/png" href="logo.jpg">
+  <link rel="icon" href="favicon.ico">
+
 </head>
+
 <body>
-  <!-- Header / Navigation -->
+
   <header class="header">
     <div class="container header-container">
-      <div class="logo">Shreyas Khamkar </div>
-      <nav class="nav" aria-label="Main Navigation">
+      <nav class="nav">
         <ul class="nav-list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -26,7 +29,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0" role="button">
+  
+      <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -34,106 +38,101 @@
     </div>
   </header>
 
- <!-- Hero Section -->
-<section id="hero" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <!-- Profile Image -->      
-      <img src="profile.jpg" alt="Profile image of Shreyas Khamkar" class="profile-img" loading="lazy" />
-      <h1>Hello! I'm Shreyas</h1>
-      <p>
-        Welcome to my website! I’m currently working as a software developer.
-        I have a passion for building scalable and efficient software solutions.
-        In my role as a software developer, I specialize in full-stack development,
-        working with technologies like React, Node.js, C#, PostgreSQL, Windows, and
-        web-based technologies. I enjoy solving complex problems and continuously
-        learning new skills to improve my craft.
-      </p>
-  
-      <!-- Social Links -->
-      <div class="social-links">
-        <a href="https://github.com/shreyaskhamkar" target="_blank" aria-label="GitHub profile">
-          <img src="github.png" alt="GitHub logo" class="social-icon" loading="lazy" />
-        </a>
-        <a href="https://www.linkedin.com/in/shreyas-khamkar-0777b720a/" target="_blank" aria-label="LinkedIn profile">
-          <img src="linkedin.png" alt="LinkedIn logo" class="social-icon" loading="lazy" />
-        </a>
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Shreyas</span></h1>
+        <p>Full-Stack Developer passionate about building scalable web and mobile experiences with React, .NET & Flutter.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="shreyaskhamkar.pdf" download class="btn btn-secondary">Download CV</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/shreyaskhamkar" target="_blank" class="social-link">
+            <img src="github.png" alt="GitHub"> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/shreyas-khamkar-0777b720a/" target="_blank" class="social-link">
+            <img src="linkedin.png" alt="LinkedIn"> LinkedIn
+          </a>
+        </div>
       </div>
-
-      <a href="shreyaskhamkar.pdf" download class="btn" aria-label="Download Resume PDF">Download Resume</a>
+      <div class="hero-image">
+        <div class="image-border">
+          <img src="profile.jpg" alt="Shreyas Khamkar" class="profile-img">
+        </div>
+      </div>
     </div>
   </section>
-  
 
-  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate developer with a strong focus on creating innovative and efficient solutions.
-        Whether working on the front-end or back-end, I aim to build applications that are both functional and beautiful.
-      </p>
-      <p>
-        In my free time, I enjoy exploring new technologies and learning about the latest trends in software development.
-        I'm always open to new opportunities and collaborations, so don't hesitate to reach out if you have any questions or would like to work together.
-      </p>
+      <h2 class="section-title">About Me</h2>
+      <p>I'm a passionate Full-Stack Developer with expertise in modern web and mobile technologies. I specialize in building scalable applications using React, .NET, Flutter, and PostgreSQL. With a keen eye for detail and a love for clean code, I create user-friendly solutions that make a difference.</p>
+      <div class="skills">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">.NET</span>
+        <span class="skill-tag">Flutter</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Node.js</span>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Selected Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Screenshot of Game Hub project" loading="lazy" />
+          <div class="project-img-wrapper">
+            <img src="game-hub.jpg" alt="Game Hub">
+          </div>
           <div class="project-info">
+            <span class="tech-tag">React • PostgreSQL</span>
             <h3>Game Hub</h3>
-            <p>Web-based platform for discovering and discussing video games, built with React, Node.js, and PostgreSQL.</p>
+            <p>Browse a curated collection of racing games across multiple platforms. Filter by popularity, platforms, and ratings to
+            find arcade racers, simulation titles, and competitive motorsport experiences.</p>
+            <a href="https://game-hub-one-rouge-12.vercel.app/" target="_blank" class="project-link">View Project →</a>
           </div>
         </div>
         <div class="project-card">
-          <img src="images/project2.jpg" alt="Screenshot of Project Title 2" loading="lazy" />
-          <div class="project-info">
-            <h3>Project Title 2</h3>
-            <p>Feature-rich productivity tool for managing daily tasks, reminders, and schedules.</p>
+          <div class="project-img-wrapper">
+            <img src="images/project2.jpg" alt="Task Tool">
           </div>
-        </div>
-        <div class="project-card">
-          <img src="images/project3.jpg" alt="Screenshot of Project Title 3" loading="lazy" />
           <div class="project-info">
-            <h3>Project Title 3</h3>
-            <p>Analytics dashboard providing real-time insights and visualizations for business metrics.</p>
+            <span class="tech-tag">Node.js • C#</span>
+            <h3>Productivity Suite</h3>
+            <p>Enterprise-grade task management system with real-time sync and scheduling.</p>
+            <a href="#" class="project-link">View Project →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <form id="contact-form" aria-label="Contact form">
-        <label for="name">Your Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required aria-required="true" />
-        <label for="email">Your Email</label>
-        <input type="email" name="email" id="email" placeholder="Your Email" required aria-required="true" />
-        <label for="message">Your Message</label>
-        <textarea name="message" id="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-        <div id="form-status" role="status" aria-live="polite" style="margin-top:10px;"></div>
-      </form>
+      <div class="contact-box">
+        <h2>Let's build something great</h2>
+        <p>Have a project in mind? Reach out and let's chat.</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="form-status" role="status"></div>
+        </form>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Shreyas Khamkar. All Rights Reserved.</p>
-    </div>
+    <p>&copy; 2024 Shreyas Khamkar. Built with Passion.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
