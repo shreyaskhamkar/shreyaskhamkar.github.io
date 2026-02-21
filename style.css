@@ -461,7 +461,7 @@
     }
 
     .about-text {
-      font-size: .93rem;
+      font-size: 1.05rem;
       line-height: 1.85;
       color: var(--ink-ghost);
       font-weight: 300;
@@ -645,7 +645,7 @@
     }
 
     .exp-bullets li {
-      font-size: .86rem;
+      font-size: .9rem;
       color: var(--ink-ghost);
       line-height: 1.65;
       font-weight: 300;
@@ -742,7 +742,7 @@
     }
 
     .project-main p {
-      font-size: .86rem;
+      font-size: .9rem;
       color: var(--ink-ghost);
       line-height: 1.65;
       font-weight: 300;
@@ -832,13 +832,13 @@
     }
 
     .extra-title {
-      font-size: .92rem;
+      font-size: 1rem;
       font-weight: 400;
       color: var(--ink);
     }
 
     .extra-sub {
-      font-size: .78rem;
+      font-size: .85rem;
       color: var(--ink-ghost);
       font-weight: 300;
     }
