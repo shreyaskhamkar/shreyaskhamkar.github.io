@@ -42,7 +42,6 @@ A modern, responsive portfolio website showcasing my work as a Full-Stack Develo
    ```
 
 2. **Option 1: Direct browser opening**
-
    - Simply open `index.html` in your web browser
 
 3. **Option 2: Using Python (recommended for development)**
@@ -63,16 +62,16 @@ A modern, responsive portfolio website showcasing my work as a Full-Stack Develo
 
 ```
 shreyaskhamkar.github.io/
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet
-├── script.js           # JavaScript functionality
-├── README.md           # This file
-├── CNAME               # GitHub Pages custom domain
-├── shreyaskhamkar.pdf  # Resume download
-├── profile.jpg         # Profile image
-├── logo.jpg            # Logo image
-├── github.png          # GitHub icon
-└── linkedin.png        # LinkedIn icon
+├── index.html                  # Main HTML file
+├── style.css                   # Stylesheet
+├── script.js                   # JavaScript functionality
+├── README.md                   # This file
+├── CNAME                       # GitHub Pages custom domain
+├── shreyas_khamkar_resume.pdf  # Resume download
+├── profile.jpg                 # Profile image
+├── logo.jpg                    # Logo image
+├── github.png                  # GitHub icon
+└── linkedin.png                # LinkedIn icon
 ```
 
 ## 🎨 Customization
